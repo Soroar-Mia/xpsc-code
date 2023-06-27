@@ -15,31 +15,40 @@ int main()
 
         sort(n, n + x);
         s = 0;
-        for(i = 0; i < x; i++) {
+        for(i = 0; i < x; i++)
+        {
             k = n[i][0];
             p = n[i][1];
 
-            if(k > h) {
-                if(m > p) {
+            if(k > h)
+            {
+                if(m > p)
+                {
                     h++;
                     p = p + (60 - m);
-                } else {
+                }
+                else
+                {
                     p = p - m;
                 }
 
                 if(h >= 24)
                     h = h - 24;
 
-                if(h > k) {
+                if(h > k)
+                {
                     k = k + (24 - h);
-                } else {
+                }
+                else
+                {
                     k = k - h;
                 }
 
                 s = 1;
                 break;
             }
-            else if(k == h && p >= m) {
+            else if(k == h && p >= m)
+            {
                 k = 0;
                 p = p - m;
                 s = 1;
@@ -47,23 +56,30 @@ int main()
             }
         }
 
-        if(s == 0) {
+        if(s == 0)
+        {
             k = n[0][0];
             p = n[0][1];
 
-            if(m > p) {
+            if(m > p)
+            {
                 h++;
                 p = p + (60 - m);
-            } else {
+            }
+            else
+            {
                 p = p - m;
             }
 
             if(h >= 24)
                 h = h - 24;
 
-            if(h > k) {
+            if(h > k)
+            {
                 k = k + (24 - h);
-            } else {
+            }
+            else
+            {
                 k = k - h;
             }
         }
