@@ -27,11 +27,32 @@ int main()
             }
         }
         int nn=a.size();
-        for(ll i=0; i<nn; i++)
+        int j=0,k=1;
+        while(k<nn+2)
         {
-
+            int sum = (a[j] + a[k]);
+            if( sum%3==0 )
+            {
+                ans++;
+                a[j]=0;
+                a[k]=0;
+                j++;
+                k=j+1;
+                continue;
+            }
+            if(k==nn-1)
+            {
+                j++;
+                k=j+1;
+                continue;
+            }
+            k++;
+            if(j==nn-2)
+                break;
         }
+        cout<<ans<<endl;
 
     }
+    return 0;
 }
 
