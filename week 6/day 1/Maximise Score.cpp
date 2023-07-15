@@ -1,13 +1,8 @@
 ///********* Bismillahir rahmanir rahim ***********
 
-#include <iostream>
-#include <vector>
-#include <limits>
+#include <bits/stdc++.h>
 using namespace std;
 
-const int N = (int)1e6 + 5;
-const int M = (int)1e9 + 5;
-const int md = (int)1e9 + 7;
 
 int main()
 {
@@ -23,8 +18,8 @@ int main()
             cin >> x;
             A.push_back(x);
         }
-        int mn = numeric_limits<int>::max();
-        int mx = numeric_limits<int>::min();
+        int mn;
+        int mx;
         for (int i = 0; i < n; i++)
         {
             if (i == 0)

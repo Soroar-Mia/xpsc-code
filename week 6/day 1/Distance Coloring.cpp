@@ -1,4 +1,4 @@
-//********* Bismillahir rahmanir rahim ***********
+///********* Bismillahir rahmanir rahim ***********
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
