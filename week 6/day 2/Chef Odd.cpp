@@ -12,7 +12,9 @@ void usool()
     cin>>n>>k;
 
     ll on=(n/2)+(n%2);
+    cout<<"on"<<on<<endl;
     ll xtraodd=on-k;
+    cout<<"xtraodd"<<xtraodd<<endl;
 
     if(n<2*k)
         cout<<"NO"<<endl;
