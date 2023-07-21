@@ -1,4 +1,5 @@
 ///******** Bismillahir Rahmanir Rahim *******
+
 #include<bits/stdc++.h>
 using namespace std;
 #define ll long long int
@@ -6,21 +7,27 @@ using namespace std;
 
 int main()
 {
-    int t;
-    cin>>t;
-    while(t--)
+    int w;
+    cin>>w;
+    if(w%2 !=0)
     {
-        int n;
-        cin>>n;
-        int total=n*4;
-        if(total<=1000)
-        {
-            cout<<"YES"<<endl;
-        }
-        else
+        cout<<"NO"<<endl;
+    }
+    else
+    {
+        if(w==2)
         {
             cout<<"NO"<<endl;
         }
+        else
+        {
+            cout<<"YES"<<endl;
+        }
+
     }
+
     return 0;
 }
+
+
+
