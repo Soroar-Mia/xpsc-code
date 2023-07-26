@@ -1,0 +1,25 @@
+STL - Standard Template Library
+
+i. Containers
+ii. Functions
+
+i. Containers:
+ 1. Vector
+ 2. Deque
+ 3. Stack
+ 4. Queue
+ 5. Set
+ 6. Multiset
+ 7. Pair
+ 8. Map
+
+CODES:
+ Vector: https://ideone.com/Mwxkd0
+ Deque: https://ideone.com/PBJhBU
+ Stack: https://ideone.com/KoDsJp
+ Queue: https://ideone.com/JCwEWX
+ Set and Iterator: https://ideone.com/PJ9YdP
+ Multiset: https://ideone.com/Ybx7uF
+ Pair: https://ideone.com/8pRLg2
+ Map: https://ideone.com/REqaSF
+ 2D: https://ideone.com/ykMG1m
