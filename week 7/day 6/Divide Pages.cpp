@@ -12,7 +12,7 @@ int main()
     {
         ll n,even=0,odd=0;
         cin>>n;
-        int a[n];
+        ll a[n];
         for(ll i=0; i<n; i++)
         {
             cin>>a[i];
@@ -23,7 +23,7 @@ int main()
             else odd++;
         }
 
-        if(even%2==0 || odd%2==0)cout<<"YES"<<endl;
+        if((odd%2==0 and even%2==0) or odd==0 or odd%2==0)cout<<"YES"<<endl;
         else cout<<"NO"<<endl;
 
     }
