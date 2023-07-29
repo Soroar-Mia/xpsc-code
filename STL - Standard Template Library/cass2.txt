@@ -1,0 +1,3 @@
+Functions using auto: https://ideone.com/VYP2sI
+bitset: https://ideone.com/I1VkkI
+pair sort: https://ideone.com/4cEP7O

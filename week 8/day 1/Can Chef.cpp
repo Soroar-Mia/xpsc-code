@@ -1,8 +1,8 @@
 ///*******Bismillahir Rahmanir Rahim********
 ///*** Read in the name of Allah, who created you ****
-
-#include <iostream>
+#include<bits/stdc++.h>
 using namespace std;
+#define ll long long int
 
 int main() {
 	int t;
@@ -11,8 +11,10 @@ int main() {
 	{
 	    int n,m;
 	    cin>>n>>m;
-	    if(m>=n) cout<<0<<endl;
-	    else cout<<n-m<<endl;
+	    ll mm=m*2;
+	    ll nn=n*15;
+	    if(nn>=mm) cout<<"YES"<<endl;
+	    else cout<<"NO"<<endl;
 	}
 	return 0;
 }
