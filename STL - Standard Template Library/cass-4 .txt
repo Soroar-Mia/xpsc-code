@@ -1,0 +1,7 @@
+Priority Queue: https://ideone.com/Iij3Bn
+Codeforces Problem 782A: 
+                      Way 1. https://ideone.com/Ds70Jq
+                      Way 2. https://ideone.com/IwvIly
+                      Way 3. https://ideone.com/mYpZgl
+
+Codeforces Problem 799B: https://ideone.com/52I9o9
