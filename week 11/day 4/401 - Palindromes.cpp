@@ -16,18 +16,18 @@ int main()
             dq.push_back(s[i]);
         }
         bool palindrome = true;
-        bool mirrored = true; // Corrected variable name
+        bool mirrored = false;
         while (!dq.empty())
         {
             char a = dq.back();
             char b = dq.front();
-            if (!isdigit(a)) // Corrected condition
+            if (!isdigit(a))
             {
-                mirrored = false; // Corrected variable assignment
+                mirrored = true;
             }
-            if (!isdigit(b)) // Corrected condition
+            if (!isdigit(b))
             {
-                mirrored = false; // Corrected variable assignment
+                mirrored = true;
             }
             if (a == b)
             {
@@ -45,11 +45,11 @@ int main()
         {
             cout << s << " -- is a mirrored palindrome." << endl;
         }
-        else if (palindrome)
+        else if (palindrome && mirrored==false)
         {
             cout << s << " -- is a regular palindrome" << endl;
         }
-        else if (mirrored)
+        else if (mirrored && palindrome==false)
         {
             cout << s << " -- is a mirrored string." << endl;
         }
