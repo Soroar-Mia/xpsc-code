@@ -1,0 +1,50 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
+
+int main()
+{
+    ll t, n, ans, i, j, min_v;
+    string a;
+    cin>>t;
+    while (t--)
+    {
+        cin>>n;
+        cin>>a;
+
+        ll box[n];
+
+        for(i=0; i<n; i++)
+        {
+            cin>>box[i];
+        }
+        int ans=0;
+        for(i=n-1; i>=0; )
+        {
+            if(a[i]==1)
+            {
+               min_v=box[i];
+               while(a[i]>=0)
+               {
+                   min_v=min(min_v,box[i]);
+                   if(a[i]==1)
+                   {
+                       ans=ans+box[i];
+                       i--;
+                   }
+                   else
+                   {
+                       ans=ans+box[i];
+                       i--;
+                       ans=ans-min_v;
+                   }
+               }
+            }
+            else
+            {
+                i--;
+            }
+        }
+        cout<<ans<<endl;
+    }
+}
